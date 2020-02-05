@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Post from './components/Post';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+(
+    <div className="content">
+        <div className="card">
+            <div className="card-header">
+            <h1 class="card-title">Hello Word</h1>
+            <Post texto="slk tiw" title="Primeiro"/>
+            <Post texto="slk tiw" title="Segundo"/>
+            <Post texto="slk tiw" title="Terceiro"/>
+            </div>
+        </div>
+    </div>
+),
+    document.getElementById('root')
+)
